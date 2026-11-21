@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>รายการสั่งซื้อ | Body Scent</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fbf8f2">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เฉพาะหน้าแอดมิน */
+    .page-title { font-size: var(--fs-xl); line-height: 1.5; }
+    .table-wrap { overflow-x: auto; border-top: var(--line); border-bottom: var(--line); }
+    #ordersTable { width: 100%; min-width: 760px; border-collapse: collapse; font-size: var(--fs-sm); line-height: 1.7; }
+    #ordersTable th,
+    #ordersTable td { padding: 1.1rem 1rem; text-align: left; vertical-align: top; border-bottom: var(--line-soft); }
+    #ordersTable th { font-family: var(--font-serif-th); font-weight: 500; color: var(--ink); background: var(--cream); white-space: nowrap; }
+    #ordersTable td { color: var(--ink-soft); }
+    #ordersTable tbody tr:last-child td { border-bottom: 0; }
+    #ordersTable td:nth-child(1) { white-space: nowrap; }
+    #ordersTable td:nth-child(5) { white-space: nowrap; color: var(--accent-deep); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Body Scent</a>
+      <nav class="nav" aria-label="เมนูหลัก">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1 class="page-title">รายการสั่งซื้อ</h1>
+          <span class="rule"></span>
+          <p>เรียงจากรายการล่าสุด ข้อมูลดึงจาก Google Sheet ออเดอร์ใหม่อาจใช้เวลาสักครู่กว่าจะปรากฏ</p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="ordersTable">
+            <thead>
+              <tr>
+                <th scope="col">วันเวลา</th>
+                <th scope="col">ชื่อลูกค้า</th>
+                <th scope="col">เบอร์โทร/Line</th>
+                <th scope="col">รายการสินค้า</th>
+                <th scope="col">จำนวนเงินรวม</th>
+                <th scope="col">หมายเหตุ</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Body Scent</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
